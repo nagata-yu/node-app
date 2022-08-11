@@ -25,7 +25,7 @@ app.post('/', multer({
     const option_0 = 'tf-pose-estimation/run_video3.py';
     const option_1 = ' --model=mobilenet_thin --resize=432x368';
     const option_2 = ` --video=${req.file.path}`;
-    const option_3 = ` --write_video=${os.userInfo().homedir}/Desktop/out.mp4`;
+    const option_3 = ` --write_video=${os.homedir()}/Desktop/out.mp4`;
     const cmd = 'python ' + path.join(__dirname, option_0) + option_1 + option_2 + option_3;
 
     exec(cmd, (err, stdout, stderr) => {
