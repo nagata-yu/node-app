@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const multer = require('multer');
 const exec = require('child_process').exec;
-const os = require('os');
+const os = require('node:os');
 
 const app = express();
 const port = process.env.PORT || 3000;
