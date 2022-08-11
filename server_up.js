@@ -39,5 +39,5 @@ app.post('/', multer({
 });
 
 app.listen(process.env.port || port, () => {
-    console.log(`Example app listening on port ${port}!`)
+    console.log(`Example app listening on port!`)
 });
