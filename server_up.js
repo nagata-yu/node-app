@@ -38,6 +38,6 @@ app.post('/', multer({
     res.sendFile(path.join(__dirname, "public/upload.html"));
 });
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
     console.log(`Example app listening on port ${port}!`)
 });
